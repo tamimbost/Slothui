@@ -10,7 +10,7 @@ A fully responsive and interactive landing page converted from a Figma template 
 
 ## 🚀 Live Demo
 
-👉 [View Live Project](https://tamimbost.github.io/Slothui/)
+👉 [View Live Project](https://slothui-phi.vercel.app/)
 
 ---
 
