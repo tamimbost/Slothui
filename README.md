@@ -2,9 +2,6 @@
 
 A fully responsive and interactive landing page converted from a Figma template using pure **HTML**, **CSS**, and **JavaScript** — without any external libraries or frameworks.
 
-<div align="center">
-  <img src="./assets/images/hero/your-screenshot.png" alt="SlothUI Screenshot" width="800"/>
-</div>
 
 ---
 
