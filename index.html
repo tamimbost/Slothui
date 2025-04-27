@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slothui Html5 Template</title>
+
+  <!--Start css Files-->
+  <link rel="stylesheet preload" href="assets/css/font-awesome-pro.css" as="style">
+  <link rel="stylesheet preload" href="assets/css/custom-components.css" as="style">
+  <link rel="stylesheet preload" href="assets/css/custom-animation.css" as="style">
+  <link rel="stylesheet preload" href="assets/css/style.css" as="style">
+  <!-- End Css File -->
+
+  <!-- Start Favicon-->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+  <!-- End Favicon -->
+</head>
+
+<body>
+
+  <!-- Start Site Preloader -->
+  <div id="slothui__preloader">
+    <div id="slothui__circle_loader"></div>
+    <div class="slothui__loader_logo"><img src="assets/images/logo/logo.svg" alt="Preload"></div>
+  </div>
+  <!-- End Site Preloader -->
+
+  <!-- Start Header Area -->
+  <header class="slothui__header-area">
+    <div class="slothui__container">
+      <div class="slothui__header-wrapper">
+        <div class="slothui__header-wrapper__logo">
+          <a href="index.html">
+            <img src="assets/images/logo/logo.svg" alt="Slothui">
+          </a>
+        </div>
+        <div class="slothui__header-wrapper__header-menu">
+          <nav class="slothui__header-wrapper__header-menu__main-menu">
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Achievements</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="slothui__header-wrapper__header-btn">
+          <a href="#" class="slothui__theme-button">Sign Up</a>
+          <a href="#" class="slothui__theme-button">Log In</a>
+          <a href="javascript:void(0)" class="slothui__mobile-menu-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7.3125 12.7969C8.34436 12.7969 9.33384 13.2069 10.0635 13.9365C10.7931 14.6662 11.2031 15.6556 11.2031 16.6875C11.2031 17.4568 10.9752 18.2089 10.5479 18.8486C10.1204 19.4884 9.51258 19.9877 8.80176 20.2822C8.09088 20.5767 7.30838 20.653 6.55371 20.5029C5.799 20.3528 5.10564 19.9826 4.56152 19.4385C4.01741 18.8944 3.64719 18.201 3.49707 17.4463C3.34699 16.6916 3.42332 15.9091 3.71777 15.1982C4.01226 14.4874 4.51163 13.8796 5.15137 13.4521C5.79108 13.0248 6.54319 12.7969 7.3125 12.7969ZM16.6875 12.7969C17.7194 12.7969 18.7088 13.2069 19.4385 13.9365C20.1681 14.6662 20.5781 15.6556 20.5781 16.6875C20.5781 17.4568 20.3502 18.2089 19.9229 18.8486C19.4954 19.4884 18.8876 19.9877 18.1768 20.2822C17.4659 20.5767 16.6834 20.653 15.9287 20.5029C15.174 20.3528 14.4806 19.9826 13.9365 19.4385C13.3924 18.8944 13.0222 18.201 12.8721 17.4463C12.722 16.6916 12.7983 15.9091 13.0928 15.1982C13.3873 14.4874 13.8866 13.8796 14.5264 13.4521C15.1661 13.0248 15.9182 12.7969 16.6875 12.7969ZM7.97656 15.085C7.6598 14.9538 7.3109 14.9195 6.97461 14.9863C6.63817 15.0532 6.32849 15.2184 6.08594 15.4609C5.84338 15.7035 5.67825 16.0132 5.61133 16.3496C5.54453 16.6859 5.57875 17.0348 5.70996 17.3516C5.84123 17.6684 6.06352 17.9394 6.34863 18.1299C6.59827 18.2967 6.8866 18.395 7.18457 18.417L7.3125 18.4219C7.77248 18.4219 8.2138 18.2393 8.53906 17.9141C8.86432 17.5888 9.04687 17.1475 9.04688 16.6875C9.04687 16.3445 8.94546 16.0088 8.75488 15.7236C8.56436 15.4385 8.29335 15.2162 7.97656 15.085ZM17.3516 15.085C17.0348 14.9538 16.6859 14.9195 16.3496 14.9863C16.0132 15.0532 15.7035 15.2184 15.4609 15.4609C15.2184 15.7035 15.0532 16.0132 14.9863 16.3496C14.9195 16.6859 14.9538 17.0348 15.085 17.3516C15.2162 17.6684 15.4385 17.9394 15.7236 18.1299C16.0088 18.3205 16.3445 18.4219 16.6875 18.4219C17.1475 18.4219 17.5888 18.2393 17.9141 17.9141C18.2393 17.5888 18.4219 17.1475 18.4219 16.6875C18.4219 16.3445 18.3205 16.0088 18.1299 15.7236C17.9394 15.4385 17.6684 15.2162 17.3516 15.085ZM15.1982 3.71777C15.9091 3.42332 16.6916 3.34699 17.4463 3.49707C18.201 3.64719 18.8944 4.01741 19.4385 4.56152C19.9826 5.10564 20.3528 5.799 20.5029 6.55371C20.653 7.30838 20.5767 8.09088 20.2822 8.80176C19.9877 9.51258 19.4884 10.1204 18.8486 10.5479C18.2089 10.9752 17.4568 11.2031 16.6875 11.2031C15.6556 11.2031 14.6662 10.7931 13.9365 10.0635C13.2069 9.33384 12.7969 8.34436 12.7969 7.3125C12.7969 6.54319 13.0248 5.79108 13.4521 5.15137C13.8796 4.51163 14.4874 4.01226 15.1982 3.71777ZM7.3125 3.42188C8.34436 3.42188 9.33384 3.83189 10.0635 4.56152C10.7931 5.29116 11.2031 6.28064 11.2031 7.3125C11.2031 8.08181 10.9752 8.83392 10.5479 9.47363C10.1204 10.1134 9.51258 10.6127 8.80176 10.9072C8.09088 11.2017 7.30838 11.278 6.55371 11.1279C5.799 10.9778 5.10564 10.6076 4.56152 10.0635C4.01741 9.51936 3.64719 8.826 3.49707 8.07129C3.34699 7.31663 3.42332 6.53412 3.71777 5.82324C4.01226 5.11242 4.51163 4.50461 5.15137 4.07715C5.79108 3.64984 6.54319 3.42188 7.3125 3.42188ZM7.97656 5.70996C7.6598 5.57875 7.3109 5.54453 6.97461 5.61133C6.63817 5.67825 6.32849 5.84338 6.08594 6.08594C5.84338 6.32849 5.67825 6.63817 5.61133 6.97461C5.54453 7.3109 5.57875 7.6598 5.70996 7.97656C5.84123 8.29335 6.06352 8.56436 6.34863 8.75488C6.63385 8.94546 6.96947 9.04687 7.3125 9.04688C7.77248 9.04688 8.2138 8.86432 8.53906 8.53906C8.86432 8.2138 9.04687 7.77248 9.04688 7.3125L9.04199 7.18457C9.01995 6.8866 8.92168 6.59827 8.75488 6.34863C8.56436 6.06352 8.29335 5.84123 7.97656 5.70996ZM16.6875 5.57812C16.2275 5.57813 15.7862 5.76068 15.4609 6.08594C15.1357 6.4112 14.9531 6.85252 14.9531 7.3125C14.9531 7.65553 15.0545 7.99115 15.2451 8.27637C15.4356 8.56148 15.7066 8.78377 16.0234 8.91504C16.3402 9.04625 16.6891 9.08047 17.0254 9.01367C17.3618 8.94675 17.6715 8.78162 17.9141 8.53906C18.1566 8.29651 18.3218 7.98683 18.3887 7.65039C18.4555 7.3141 18.4212 6.9652 18.29 6.64844C18.1588 6.33165 17.9365 6.06064 17.6514 5.87012C17.3662 5.67954 17.0305 5.57812 16.6875 5.57812Z"
+                fill="#475569" stroke="#475569" stroke-width="0.09375" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header Area -->
+
+  <!-- Start Hero Area -->
+  <section class="slothui__hero-area slothui__position-relative" data-background="assets/images/bg/hero-bg.png">
+    <div class="slothui__container">
+      <div class="slothui__hero-wrapper">
+        <div class="slothui__title-meta slothui__animate animate-from-bottom">
+          <span class="slothui__title-meta__text">Design System For GenZ</span>
+        </div>
+        <h1 class="slothui__hero-wrapper__title slothui__animate animate-from-top">Unleash Your Inner Design <br> Sloth
+          Today.</h1>
+        <p class="slothui__hero-wrapper__sub-title slothui__animate animate-from-top">Suspendisse faucibus interdum
+          posuere lorem ipsum dolor sit amet. Cras fermentum odio eu <br> feugiat pretium nibh ipsum. Venenatis cras sed
+          felis eget velit aliquet.</p>
+        <div class="slothui__hero-wrapper__download-btns slothui__animate animate-from-left">
+          <a href="#">
+            <img src="assets/images/button/1.png" alt="Slothui">
+          </a>
+          <a href="#">
+            <img src="assets/images/button/2.png" alt="Slothui">
+          </a>
+        </div>
+        <div class="slothui__hero-wrapper__hero-images">
+          <img src="assets/images/hero/desktop.png" alt="Slothui"
+            class="slothui__hero-wrapper__hero-images__desktop slothui__animate animate-reveal">
+          <img src="assets/images/hero/mobile.png" alt="Slothui"
+            class="slothui__hero-wrapper__hero-images__mobile slothui__animate animate-reveal">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Area -->
+
+  <!-- Start Brand Area -->
+  <div class="slothui__brand-area slothui__position-relative">
+    <div class="slothui__container">
+      <div class="slothui__brand-area__wrapper">
+        <div class="slothui__brand-area__wrapper__item slothui__animate animate-from-bottom">
+          <a href="#">
+            <img src="assets/images/brand/1.png" alt="Sloth">
+          </a>
+        </div>
+        <div class="slothui__brand-area__wrapper__item slothui__animate animate-from-left">
+          <a href="#">
+            <img src="assets/images/brand/2.png" alt="Sloth">
+          </a>
+        </div>
+        <div class="slothui__brand-area__wrapper__item slothui__animate animate-from-top">
+          <a href="#">
+            <img src="assets/images/brand/3.png" alt="Sloth">
+          </a>
+        </div>
+        <div class="slothui__brand-area__wrapper__item slothui__animate animate-from-bottom">
+          <a href="#">
+            <img src="assets/images/brand/4.png" alt="Sloth">
+          </a>
+        </div>
+        <div class="slothui__brand-area__wrapper__item slothui__animate animate-from-left">
+          <a href="#">
+            <img src="assets/images/brand/5.png" alt="Sloth">
+          </a>
+        </div>
+        <div class="slothui__brand-area__wrapper__item slothui__animate animate-from-top">
+          <a href="#">
+            <img src="assets/images/brand/6.png" alt="Sloth">
+          </a>
+        </div>
+        <div class="slothui__brand-area__wrapper__item slothui__animate animate-from-bottom">
+          <a href="#">
+            <img src="assets/images/brand/7.png" alt="Sloth">
+          </a>
+        </div>
+        <div class="slothui__brand-area__wrapper__item slothui__animate animate-from-left">
+          <a href="#">
+            <img src="assets/images/brand/8.png" alt="Sloth">
+          </a>
+        </div>
+        <div class="slothui__brand-area__wrapper__item slothui__animate animate-from-top">
+          <a href="#">
+            <img src="assets/images/brand/9.png" alt="Sloth">
+          </a>
+        </div>
+        <div class="slothui__brand-area__wrapper__item slothui__animate animate-from-bottom">
+          <a href="#">
+            <img src="assets/images/brand/10.png" alt="Sloth">
+          </a>
+        </div>
+        <div class="slothui__brand-area__wrapper__item slothui__animate animate-from-left">
+          <a href="#">
+            <img src="assets/images/brand/11.png" alt="Sloth">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Brand Area -->
+
+  <!-- Start Features Area -->
+  <section
+    class="slothui__features-area slothui__position-relative slothui__section-gap-top slothui__section-gap-bottom">
+    <div class="slothui__container">
+      <div class="slothui__title-wrapper slothui__align-center slothui__title-wrapper-gap">
+        <span class="slothui__title-meta__text slothui__animate animate-from-top">Our Main Features</span>
+        <h2 class="slothui__title slothui__animate animate-from-left">Our Primary Features</h2>
+        <p class="slothui__sub-title slothui__animate animate-from-bottom">Volutpat commodo sed egestas egestas
+          fringilla phasellus. Tincidunt eget nullam <br> non nisi. Nisi porta lorem mollis aliquam ut porttitor leo.
+        </p>
+      </div>
+      <div class="slothui__features-area__wrapper">
+        <div class="slothui__features-area__item slothui__animate animate-from-top">
+          <span class="slothui__features-area__item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <path
+                d="M67.4345 36.9282C67.3398 36.5275 67.1477 36.1564 66.8751 35.8478C66.6025 35.5393 66.2579 35.3028 65.872 35.1594L47.8689 28.4063L52.4501 5.49068C52.5538 4.95824 52.4816 4.40651 52.2443 3.91874C52.0069 3.43097 51.6174 3.03363 51.1344 2.78668C50.6514 2.53973 50.1012 2.45656 49.5668 2.54973C49.0325 2.6429 48.5429 2.90735 48.172 3.30318L13.172 40.8032C12.8877 41.1027 12.6821 41.468 12.5734 41.8664C12.4648 42.2648 12.4565 42.6839 12.5494 43.0863C12.6422 43.4887 12.8333 43.8618 13.1055 44.1723C13.3778 44.4828 13.7227 44.721 14.1095 44.8657L32.1189 51.6188L27.5501 74.5094C27.4464 75.0419 27.5186 75.5936 27.756 76.0814C27.9933 76.5691 28.3828 76.9665 28.8658 77.2134C29.3488 77.4604 29.899 77.5435 30.4334 77.4504C30.9677 77.3572 31.4573 77.0927 31.8282 76.6969L66.8282 39.1969C67.1074 38.8973 67.3086 38.5338 67.4143 38.1382C67.52 37.7426 67.527 37.3271 67.4345 36.9282ZM34.1782 66.8751L37.4501 50.5063C37.5672 49.9258 37.4744 49.3225 37.1883 48.804C36.9021 48.2855 36.4412 47.8854 35.8876 47.6751L19.3751 41.4719L45.8189 13.1407L42.5501 29.5094C42.433 30.09 42.5258 30.6932 42.8119 31.2117C43.0981 31.7302 43.559 32.1303 44.1126 32.3407L60.6126 38.5282L34.1782 66.8751Z"
+                fill="#4F46E5" />
+            </svg>
+          </span>
+          <h5 class="slothui__features-area__item__title">Lazy Efficient</h5>
+          <p class="slothui__features-area__item__discription">A cras semper auctor neque. Proin libero nunc <br>
+            consequat interdum varius sit. Libero volutpat sed <br> cras ornare arcu dui vivamus arcu felis.</p>
+        </div>
+        <div class="slothui__features-area__item slothui__animate animate-from-bottom">
+          <span class="slothui__features-area__item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <path
+                d="M40 25C37.0333 25 34.1332 25.8797 31.6664 27.5279C29.1997 29.1762 27.2771 31.5188 26.1418 34.2597C25.0065 37.0006 24.7094 40.0166 25.2882 42.9263C25.867 45.8361 27.2956 48.5088 29.3934 50.6066C31.4912 52.7044 34.1639 54.133 37.0736 54.7118C39.9833 55.2905 42.9993 54.9935 45.7402 53.8582C48.4811 52.7229 50.8238 50.8003 52.472 48.3335C54.1202 45.8668 55 42.9667 55 40C54.9958 36.023 53.4142 32.2101 50.602 29.3979C47.7899 26.5858 43.977 25.0041 40 25ZM40 50C38.0222 50 36.0888 49.4135 34.4443 48.3147C32.7998 47.2159 31.5181 45.6541 30.7612 43.8268C30.0043 41.9996 29.8063 39.9889 30.1921 38.0491C30.578 36.1093 31.5304 34.3274 32.9289 32.9289C34.3274 31.5304 36.1093 30.578 38.0491 30.1921C39.9889 29.8063 41.9996 30.0043 43.8268 30.7612C45.6541 31.5181 47.2159 32.7998 48.3147 34.4443C49.4135 36.0888 50 38.0222 50 40C50 42.6521 48.9464 45.1957 47.0711 47.071C45.1957 48.9464 42.6521 50 40 50ZM74.3562 33.5031C74.2866 33.1511 74.142 32.8181 73.9322 32.5269C73.7225 32.2358 73.4525 31.9932 73.1406 31.8156L63.8187 26.5031L63.7812 15.9969C63.7801 15.635 63.7004 15.2778 63.5478 14.9497C63.3951 14.6217 63.173 14.3307 62.8969 14.0969C59.5154 11.2365 55.6214 9.04456 51.4219 7.63748C51.0911 7.52554 50.7407 7.48412 50.393 7.51587C50.0453 7.54763 49.7081 7.65186 49.4031 7.82186L40 13.0781L30.5875 7.81248C30.2823 7.64153 29.9447 7.53651 29.5964 7.50421C29.2482 7.47191 28.897 7.51306 28.5656 7.62498C24.3692 9.04235 20.4796 11.2427 17.1031 14.1094C16.8274 14.3428 16.6055 14.6333 16.4529 14.9608C16.3002 15.2883 16.2203 15.6449 16.2187 16.0062L16.1719 26.5219L6.84998 31.8344C6.53811 32.0119 6.26812 32.2545 6.05836 32.5457C5.84861 32.8369 5.70399 33.1698 5.63436 33.5219C4.78122 37.809 4.78122 42.2222 5.63436 46.5094C5.70399 46.8614 5.84861 47.1943 6.05836 47.4855C6.26812 47.7767 6.53811 48.0193 6.84998 48.1969L16.1719 53.5094L16.2094 64.0156C16.2105 64.3774 16.2902 64.7347 16.4428 65.0628C16.5955 65.3908 16.8176 65.6818 17.0937 65.9156C20.4752 68.7759 24.3692 70.9679 28.5687 72.375C28.8994 72.4869 29.2499 72.5283 29.5976 72.4966C29.9453 72.4648 30.2825 72.3606 30.5875 72.1906L40 66.9219L49.4125 72.1875C49.785 72.395 50.2048 72.5027 50.6312 72.5C50.9043 72.4999 51.1755 72.4556 51.4344 72.3687C55.6303 70.9532 59.5198 68.7551 62.8969 65.8906C63.1726 65.6571 63.3944 65.3666 63.5471 65.0392C63.6998 64.7117 63.7797 64.355 63.7812 63.9937L63.8281 53.4781L73.15 48.1656C73.4619 47.9881 73.7318 47.7455 73.9416 47.4543C74.1514 47.1631 74.296 46.8302 74.3656 46.4781C75.214 42.1944 75.2108 37.7856 74.3562 33.5031ZM69.6687 44.4125L60.7406 49.4906C60.3494 49.713 60.0255 50.0369 59.8031 50.4281C59.6219 50.7406 59.4312 51.0719 59.2375 51.3844C58.9895 51.7784 58.8574 52.2344 58.8562 52.7L58.8094 62.7781C56.4096 64.6626 53.7361 66.1696 50.8812 67.2469L41.875 62.2281C41.5011 62.0212 41.0804 61.9136 40.6531 61.9156H40.5937C40.2156 61.9156 39.8344 61.9156 39.4562 61.9156C39.009 61.9044 38.5668 62.0123 38.175 62.2281L29.1625 67.2594C26.3016 66.1904 23.6207 64.6908 21.2125 62.8125L21.1781 52.75C21.1766 52.2834 21.0445 51.8266 20.7969 51.4312C20.6031 51.1187 20.4125 50.8062 20.2344 50.475C20.0135 50.0778 19.6896 49.7474 19.2969 49.5187L10.3594 44.4281C9.89686 41.5025 9.89686 38.5224 10.3594 35.5969L19.2719 30.5094C19.663 30.2869 19.9869 29.963 20.2094 29.5719C20.3906 29.2594 20.5812 28.9281 20.775 28.6156C21.023 28.2215 21.1551 27.7656 21.1562 27.3L21.2031 17.2219C23.6029 15.3373 26.2764 13.8304 29.1312 12.7531L38.125 17.7719C38.5164 17.9888 38.9589 18.0967 39.4062 18.0844C39.7844 18.0844 40.1656 18.0844 40.5437 18.0844C40.991 18.0955 41.4331 17.9877 41.825 17.7719L50.8375 12.7406C53.6984 13.8096 56.3793 15.3092 58.7875 17.1875L58.8219 27.25C58.8234 27.7165 58.9555 28.1733 59.2031 28.5687C59.3969 28.8812 59.5875 29.1937 59.7656 29.525C59.9865 29.9222 60.3103 30.2525 60.7031 30.4812L69.6406 35.5719C70.1093 38.4997 70.1145 41.483 69.6562 44.4125H69.6687Z"
+                fill="#4F46E5" />
+            </svg>
+          </span>
+          <h5 class="slothui__features-area__item__title">Streamlined Process</h5>
+          <p class="slothui__features-area__item__discription">Montes nascetur ridiculus mus mauris vitae ultricies <br>
+            leo integer malesuada. Orci porta non pulvinar <br> neque laoreet.</p>
+        </div>
+        <div class="slothui__features-area__item slothui__animate animate-from-left">
+          <span class="slothui__features-area__item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <path
+                d="M73.5938 67.7532C66.5438 64.3157 62.5001 56.947 62.5001 47.5032V42.1032C62.5027 41.1014 62.2032 40.1221 61.6407 39.2931C61.0782 38.4641 60.2788 37.824 59.3469 37.4564L51.5626 34.3751C50.9501 34.1301 50.4593 33.6531 50.1971 33.0478C49.9349 32.4426 49.9224 31.7582 50.1626 31.1439L56.8251 14.5814C57.2772 13.4943 57.5054 12.3272 57.4958 11.1499C57.4862 9.97254 57.2392 8.80927 56.7694 7.72969C56.2996 6.65012 55.6168 5.67645 54.7619 4.86699C53.9069 4.05754 52.8974 3.42895 51.7938 3.01886C49.6442 2.23125 47.2723 2.31297 45.182 3.24665C43.0917 4.18032 41.448 5.89235 40.6001 8.01886C40.5988 8.03133 40.5988 8.04389 40.6001 8.05636L34.0313 24.6876C33.787 25.3029 33.3086 25.7962 32.7011 26.0592C32.0936 26.3222 31.4066 26.3336 30.7907 26.0907L22.8469 22.8564C21.9311 22.4852 20.9253 22.3958 19.9583 22.5996C18.9913 22.8033 18.1071 23.291 17.4188 24.0001C10.8376 30.7657 7.50006 38.672 7.50006 47.5001C7.48277 56.5342 10.9765 65.2216 17.2438 71.7282C17.4786 71.9737 17.761 72.1688 18.0737 72.3015C18.3864 72.4342 18.7229 72.5018 19.0626 72.5001H72.5001C73.0651 72.4996 73.6133 72.3076 74.0553 71.9556C74.4973 71.6035 74.807 71.1121 74.9338 70.5614C75.0607 70.0108 74.9973 69.4334 74.7539 68.9235C74.5106 68.4135 74.1017 68.001 73.5938 67.7532ZM20.9813 27.5001L28.9219 30.7189C29.8385 31.0856 30.8185 31.2677 31.8056 31.2548C32.7928 31.2419 33.7677 31.0343 34.6744 30.6438C35.5811 30.2533 36.4018 29.6876 37.0894 28.9792C37.777 28.2708 38.318 27.4337 38.6813 26.5157L45.2438 9.95324C46.0438 8.04386 48.2032 7.05636 50.0657 7.76574C50.5405 7.94191 50.9748 8.21245 51.3422 8.56103C51.7096 8.90961 52.0026 9.329 52.2035 9.79392C52.4045 10.2588 52.5091 10.7596 52.5112 11.2661C52.5133 11.7725 52.4128 12.2742 52.2157 12.7407L45.5282 29.3001C44.796 31.1472 44.8267 33.2094 45.6136 35.0339C46.4005 36.8584 47.8792 38.2961 49.7251 39.0314L57.5001 42.1032V47.5001C57.5001 47.6032 57.5001 47.7064 57.5001 47.8126L17.4282 31.7845C18.4935 30.2617 19.6819 28.8288 20.9813 27.5001ZM35.9813 67.5001C32.2592 63.9297 29.6223 59.3797 28.3751 54.3751C28.2012 53.7421 27.7854 53.2029 27.2174 52.8739C26.6494 52.5449 25.9748 52.4524 25.3392 52.6165C24.7037 52.7807 24.1582 53.1882 23.8205 53.7511C23.4828 54.314 23.3801 54.9871 23.5344 55.6251C24.6248 59.9305 26.5766 63.9702 29.2719 67.5001H20.1376C15.2069 62.0068 12.486 54.8817 12.5001 47.5001C12.4695 43.5891 13.2939 39.7186 14.9157 36.1595L57.9782 53.3845C58.9157 59.0095 61.2782 63.847 64.8188 67.497L35.9813 67.5001Z"
+                fill="#4F46E5" />
+            </svg>
+          </span>
+          <h5 class="slothui__features-area__item__title">Minimum Effort</h5>
+          <p class="slothui__features-area__item__discription">Tincidunt eget nullam non nisi est sit amet facilisis
+            <br> magna. Rhoncus dolor purus non enim praesent <br> elementum.</p>
+        </div>
+        <div class="slothui__features-area__item slothui__animate animate-from-top">
+          <span class="slothui__features-area__item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <path
+                d="M72.5 65C72.5 65.663 72.2366 66.2989 71.7678 66.7678C71.2989 67.2366 70.663 67.5 70 67.5H10C9.33696 67.5 8.70107 67.2366 8.23223 66.7678C7.76339 66.2989 7.5 65.663 7.5 65V15C7.5 14.337 7.76339 13.7011 8.23223 13.2322C8.70107 12.7634 9.33696 12.5 10 12.5C10.663 12.5 11.2989 12.7634 11.7678 13.2322C12.2366 13.7011 12.5 14.337 12.5 15V44.4906L28.3531 30.625C28.7845 30.2474 29.3326 30.0295 29.9055 30.0079C30.4784 29.9862 31.0414 30.1622 31.5 30.5063L49.8781 44.2906L68.3531 28.125C68.5954 27.8852 68.8841 27.6975 69.2015 27.5734C69.519 27.4493 69.8584 27.3914 70.1991 27.4032C70.5397 27.4151 70.8743 27.4965 71.1824 27.6425C71.4904 27.7884 71.7653 27.9958 71.9902 28.2519C72.2152 28.508 72.3854 28.8074 72.4903 29.1317C72.5953 29.4559 72.6329 29.7983 72.6007 30.1376C72.5686 30.4769 72.4674 30.8061 72.3033 31.1049C72.1393 31.4036 71.9159 31.6657 71.6469 31.875L51.6469 49.375C51.2155 49.7526 50.6674 49.9705 50.0945 49.9921C49.5216 50.0138 48.9586 49.8378 48.5 49.4938L30.1219 35.7156L12.5 51.1344V62.5H70C70.663 62.5 71.2989 62.7634 71.7678 63.2322C72.2366 63.7011 72.5 64.337 72.5 65Z"
+                fill="#4F46E5" />
+            </svg>
+          </span>
+          <h5 class="slothui__features-area__item__title">Absolutely Easy To Use</h5>
+          <p class="slothui__features-area__item__discription">Rutrum quisque non tellus orci ac. Purus viverra <br>
+            accumsan in nisl. Id interdum velit laoreet id donec <br> ultrices adisipicing elit.</p>
+        </div>
+        <div class="slothui__features-area__item slothui__animate animate-from-bottom">
+          <span class="slothui__features-area__item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <path
+                d="M70 32.4999H67.3844C66.7562 25.6714 63.5995 19.3239 58.5334 14.7025C53.4673 10.081 46.8573 7.51904 40 7.51904C33.1427 7.51904 26.5327 10.081 21.4666 14.7025C16.4005 19.3239 13.2438 25.6714 12.6156 32.4999H10C9.33696 32.4999 8.70107 32.7633 8.23223 33.2321C7.76339 33.701 7.5 34.3369 7.5 34.9999C7.51098 40.9453 9.14716 46.7745 12.2316 51.8572C15.316 56.9399 19.7313 61.0827 25 63.8374V64.9999C25 66.326 25.5268 67.5978 26.4645 68.5354C27.4021 69.4731 28.6739 69.9999 30 69.9999H50C51.3261 69.9999 52.5979 69.4731 53.5355 68.5354C54.4732 67.5978 55 66.326 55 64.9999V63.8374C60.2687 61.0827 64.684 56.9399 67.7684 51.8572C70.8528 46.7745 72.489 40.9453 72.5 34.9999C72.5 34.3369 72.2366 33.701 71.7678 33.2321C71.2989 32.7633 70.663 32.4999 70 32.4999ZM62.3562 32.4999H46.2875C49.3185 27.9527 53.904 24.6671 59.1844 23.2593C60.9109 26.0676 61.9941 29.2233 62.3562 32.4999ZM54.2125 17.5718C54.7854 18.0405 55.3344 18.5353 55.8594 19.0562C49.2043 21.3973 43.7047 26.2087 40.5 32.4937H31.2812C32.8438 28.1138 35.7204 24.3231 39.5182 21.6394C43.316 18.9558 47.8497 17.5101 52.5 17.4999C53.0719 17.4999 53.6437 17.528 54.2125 17.5718ZM40 12.4999C42.0062 12.5012 44.0031 12.7714 45.9375 13.303C41.2264 14.4717 36.9065 16.8616 33.4134 20.2319C29.9202 23.6021 27.3772 27.8336 26.0406 32.4999H17.6437C18.2639 27.0026 20.8854 21.9258 25.0085 18.2372C29.1315 14.5487 34.4678 12.5065 40 12.4999ZM51.4563 59.9999C51.0202 60.2003 50.651 60.5219 50.3927 60.9264C50.1345 61.331 49.9982 61.8013 50 62.2812V64.9999H30V62.2812C30.0018 61.8013 29.8655 61.331 29.6073 60.9264C29.349 60.5219 28.9798 60.2003 28.5437 59.9999C24.1472 57.9768 20.3602 54.8328 17.5628 50.8835C14.7654 46.9343 13.056 42.3186 12.6063 37.4999H67.3844C66.9355 42.3176 65.2275 46.9326 62.4318 50.8818C59.6361 54.831 55.851 57.9755 51.4563 59.9999Z"
+                fill="#4F46E5" />
+            </svg>
+          </span>
+          <h5 class="slothui__features-area__item__title">Just Sleep & Chill</h5>
+          <p class="slothui__features-area__item__discription">Bibendum est ultricies integer quis auctor elit. <br>
+            Ultrices in iaculis nunc sed. A scelerisque purus <br> semper eget. Facilisi morbi tempus iaculi.</p>
+        </div>
+        <div class="slothui__features-area__item slothui__animate animate-from-left">
+          <span class="slothui__features-area__item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <path
+                d="M40 7.5C33.5721 7.5 27.2886 9.40609 21.944 12.9772C16.5994 16.5484 12.4338 21.6242 9.97393 27.5628C7.51408 33.5014 6.87047 40.0361 8.12449 46.3404C9.37851 52.6448 12.4738 58.4358 17.019 62.981C21.5643 67.5262 27.3552 70.6215 33.6596 71.8755C39.964 73.1295 46.4986 72.4859 52.4372 70.0261C58.3758 67.5662 63.4516 63.4006 67.0228 58.056C70.5939 52.7114 72.5 46.4279 72.5 40C72.4909 31.3833 69.0639 23.122 62.9709 17.0291C56.878 10.9361 48.6168 7.5091 40 7.5ZM40 67.5C34.561 67.5 29.2442 65.8872 24.7218 62.8654C20.1995 59.8437 16.6747 55.5488 14.5933 50.5238C12.5119 45.4988 11.9673 39.9695 13.0284 34.635C14.0895 29.3005 16.7086 24.4005 20.5546 20.5546C24.4005 16.7086 29.3006 14.0895 34.635 13.0284C39.9695 11.9673 45.4988 12.5119 50.5238 14.5933C55.5488 16.6747 59.8437 20.1995 62.8654 24.7218C65.8872 29.2442 67.5 34.561 67.5 40C67.4917 47.2909 64.5918 54.2808 59.4363 59.4363C54.2809 64.5918 47.2909 67.4917 40 67.5ZM25 33.75C25 33.0083 25.2199 32.2833 25.632 31.6666C26.0441 31.0499 26.6297 30.5693 27.315 30.2855C28.0002 30.0016 28.7542 29.9274 29.4816 30.0721C30.209 30.2167 30.8772 30.5739 31.4017 31.0983C31.9261 31.6228 32.2833 32.291 32.428 33.0184C32.5727 33.7458 32.4984 34.4998 32.2146 35.1851C31.9307 35.8703 31.4501 36.456 30.8334 36.868C30.2167 37.2801 29.4917 37.5 28.75 37.5C27.7555 37.5 26.8016 37.1049 26.0984 36.4017C25.3951 35.6984 25 34.7446 25 33.75ZM57.5 33.75C57.5 34.413 57.2366 35.0489 56.7678 35.5178C56.2989 35.9866 55.6631 36.25 55 36.25H47.5C46.837 36.25 46.2011 35.9866 45.7322 35.5178C45.2634 35.0489 45 34.413 45 33.75C45 33.087 45.2634 32.4511 45.7322 31.9822C46.2011 31.5134 46.837 31.25 47.5 31.25H55C55.6631 31.25 56.2989 31.5134 56.7678 31.9822C57.2366 32.4511 57.5 33.087 57.5 33.75ZM54.6625 48.75C51.4469 54.3094 46.1031 57.5 40 57.5C33.8969 57.5 28.5531 54.3125 25.3344 48.75C25.1702 48.4656 25.0637 48.1517 25.0209 47.8261C24.9781 47.5005 24.9998 47.1697 25.0848 46.8526C25.1698 46.5354 25.3165 46.2381 25.5164 45.9776C25.7163 45.7171 25.9656 45.4985 26.25 45.3344C26.5344 45.1702 26.8483 45.0637 27.1739 45.0209C27.4995 44.978 27.8303 44.9998 28.1475 45.0848C28.4646 45.1698 28.7619 45.3165 29.0224 45.5164C29.2829 45.7163 29.5015 45.9656 29.6656 46.25C31.9969 50.2844 35.6656 52.5 40 52.5C44.3344 52.5 48.0031 50.2812 50.3375 46.25C50.4938 45.9512 50.7089 45.6872 50.9699 45.4737C51.2309 45.2602 51.5324 45.1018 51.8562 45.0078C52.18 44.9139 52.5195 44.8864 52.8542 44.9271C53.1889 44.9677 53.5119 45.0757 53.8038 45.2444C54.0957 45.4131 54.3505 45.6392 54.5528 45.9089C54.7551 46.1787 54.9007 46.4865 54.9809 46.814C55.0612 47.1415 55.0743 47.4819 55.0196 47.8146C54.9649 48.1473 54.8434 48.4655 54.6625 48.75Z"
+                fill="#4F46E5" />
+            </svg>
+          </span>
+          <h5 class="slothui__features-area__item__title">Don’t Worry About Life</h5>
+          <p class="slothui__features-area__item__discription">Pharetra diam sit amet nisl suscipit adipiscing <br>
+            bibendum est. Risus ultricies tristique nulla aliquet <br> enim tortor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Features Area -->
+
+  <!-- Start Statistics Area -->
+  <section
+    class="slothui__statistics-area slothui__position-relative slothui__section-gap-top slothui__section-gap-bottom">
+    <div class="slothui__container">
+      <div class="slothui__title-wrapper slothui__align-center slothui__title-wrapper-gap">
+        <span class="slothui__titel-icon slothui__animate animate-from-bottom">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path
+              d="M24.2966 11.5775L15.5466 2.82748C15.1364 2.41739 14.5801 2.18701 14 2.18701C13.42 2.18701 12.8637 2.41739 12.4534 2.82748L3.70345 11.5775C3.49949 11.7802 3.33782 12.0214 3.22779 12.287C3.11777 12.5527 3.06159 12.8376 3.06251 13.1251V23.6251C3.06251 23.9732 3.20079 24.3071 3.44693 24.5532C3.69308 24.7994 4.02691 24.9376 4.37501 24.9376H23.625C23.9731 24.9376 24.3069 24.7994 24.5531 24.5532C24.7992 24.3071 24.9375 23.9732 24.9375 23.6251V13.1251C24.9384 12.8376 24.8823 12.5527 24.7722 12.287C24.6622 12.0214 24.5005 11.7802 24.2966 11.5775ZM22.3125 22.3126H5.68751V13.3056L14 4.99311L22.3125 13.3056V22.3126Z"
+              fill="#4F46E5" />
+          </svg>
+        </span>
+        <h2 class="slothui__title slothui__animate animate-from-left">Work lazily and achieve the result you want.</h2>
+        <p class="slothui__sub-title slothui__animate animate-from-top">Liquam id diam maecenas ultricies mi eget mauris
+          pharetra et. Feugiat pretium nibh <br> ipsum consequat nisl vel pretium lectus. Fermentum iaculis eu non diam.
+        </p>
+      </div>
+      <div class="slothui__statistics-area__wrapper">
+        <div class="slothui__statistics-area__item">
+          <div class="slothui__statistics-area__item__number">
+            <span class="slothui__counter" data-target="420">0</span>
+            <span class="slothui__statistics-area__item__number__symble">%</span>
+          </div>
+          <h5 class="slothui__statistics-area__item__data-type">Data Efficiency</h5>
+        </div>
+        <div class="slothui__statistics-area__item">
+          <div class="slothui__statistics-area__item__number">
+            <span class="slothui__counter" data-target="708">0</span>
+            <span class="slothui__statistics-area__item__number__symble">+</span>
+          </div>
+          <h5 class="slothui__statistics-area__item__data-type">Conversion Rate</h5>
+        </div>
+        <div class="slothui__statistics-area__item">
+          <div class="slothui__statistics-area__item__number">
+            <span class="slothui__counter" data-target="1.82">0</span>
+            <span class="slothui__statistics-area__item__number__symble">M</span>
+          </div>
+          <h5 class="slothui__statistics-area__item__data-type">AI LLM Scale</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Statistics Area -->
+
+  <!-- Start Tab Area  -->
+  <section class="slothui__tab-area slothui__section-gap-bottom slothui__section-gap-top slothui__position-relative">
+    <div class="slothui__container">
+      <div class="slothui__title-wrapper slothui__title-wrapper-gap">
+        <span class="slothui__title-meta__text slothui__animate animate-from-top">Who is it for?</span>
+        <h2 class="slothui__title slothui__animate animate-from-left">Our Primary Features</h2>
+        <p class="slothui__sub-title slothui__animate animate-from-bottom">Mi ipsum faucibus vitae aliquet nec. At
+          tempor commodo ullamcorper a <br> lacus. Bibendum at varius vel pharetra vel.</p>
+      </div>
+      <div class="slothui__tab-area__wrapper">
+        <div class="slothui__tab-area__text-content">
+          <div
+            class="slothui__tab-area__text-content__item slothui__tab slothui__active slothui__animate animate-from-top"
+            data-tab="1">
+            <div class="slothui__tab-area__text-content__item__inner-content">
+              <h5 class="slothui__tab-area__text-content__item__title">Convallis tellus id interdum velit</h5>
+              <p class="slothui__tab-area__text-content__item__discription">Est pellentesque elit ullamcorper dignissim
+                cras. In <br> pellentesque massa placerat duis ultricies.</p>
+            </div>
+          </div>
+          <div class="slothui__tab-area__text-content__item slothui__tab slothui__animate animate-from-left"
+            data-tab="2">
+            <div class="slothui__tab-area__text-content__item__inner-content">
+              <h5 class="slothui__tab-area__text-content__item__title">Id interdum velit laoreet id donec ultrices</h5>
+              <p class="slothui__tab-area__text-content__item__discription">Donec massa sapien faucibus et molestie ac
+                feugiat sed. <br> Congue mauris rhoncus aenean vel elit scelerisque.</p>
+            </div>
+          </div>
+          <div class="slothui__tab-area__text-content__item slothui__tab slothui__animate animate-from-bottom"
+            data-tab="3">
+            <div class="slothui__tab-area__text-content__item__inner-content">
+              <h5 class="slothui__tab-area__text-content__item__title">Sapien et ligula ullamcorper malesuada</h5>
+              <p class="slothui__tab-area__text-content__item__discription">Donec massa sapien faucibus et molestie ac
+                feugiat sed. <br> Congue mauris rhoncus aenean vel elit scelerisque.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slothui__tab-area__img-content">
+          <img src="assets/images/features/1.png" alt="Slothui"
+            class="slothui__tab-img slothui__active slothui__animate animate-from-bottom" data-tab="1">
+          <img src="assets/images/features/1.png" alt="Slothui"
+            class="slothui__tab-img slothui__animate animate-from-left" data-tab="2">
+          <img src="assets/images/features/1.png" alt="Slothui"
+            class="slothui__tab-img slothui__animate animate-from-top" data-tab="3">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Tab Area -->
+
+  <!-- Start Testimonial Area -->
+  <section
+    class="slothui__testimonial-area slothui__position-relative slothui__section-gap-bottom slothui__section-gap-top">
+    <div class="slothui__container">
+      <div class="slothui__title-wrapper slothui__align-center slothui__title-wrapper-gap">
+        <span class="slothui__title-meta__text slothui__animate animate-from-top">Testimonials</span>
+        <h2 class="slothui__title slothui__animate animate-from-left">What People Say</h2>
+        <p class="slothui__sub-title slothui__animate animate-from-bottom">You can visit our office anytime but please
+          don’t stalk us or don’t be creepy.</p>
+      </div>
+      <div class="slothui__testimonial-area__wrapper">
+        <div class="slothui__testimonial-area__items">
+          <div class="slothui__testimonial-area__items__item slothui__animate animate-from-bottom">
+            <div class="slothui__testimonial-area__items__item__review">
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+            </div>
+            <p class="slothui__testimonial-area__items__item__discriptions">
+              Lorem ipsum dolor sit amet, consectetur ad-zzz-ing elit. Proin vel urna at metus tempor mattis, or not,
+              whatever.
+            </p>
+            <div class="slothui__testimonial-area__items__item__client-profile">
+              <div class="slothui__testimonial-area__items__item__client-profile__img">
+                <img src="assets/images/testimonial/1.png" alt="Slothui">
+              </div>
+              <div class="slothui__testimonial-area__items__item__client-profile__info">
+                <h6 class="slothui__testimonial-area__items__item__client-profile__info__name">X_AE_A-13</h6>
+                <span class="slothui__testimonial-area__items__item__client-profile__info__identifications">Product
+                  Designer, slothUI</span>
+              </div>
+            </div>
+          </div>
+          <div class="slothui__testimonial-area__items__item slothui__animate animate-from-top">
+            <div class="slothui__testimonial-area__items__item__review">
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+            </div>
+            <p class="slothui__testimonial-area__items__item__discriptions">
+              Nisi porta lorem mollis aliquam ut porttitor leo. Sed odio morbi quis commodo. Arcu non odio euismod
+              lacinia at quis. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae.
+            </p>
+            <div class="slothui__testimonial-area__items__item__client-profile">
+              <div class="slothui__testimonial-area__items__item__client-profile__img">
+                <img src="assets/images/testimonial/2.png" alt="Slothui">
+              </div>
+              <div class="slothui__testimonial-area__items__item__client-profile__info">
+                <h6 class="slothui__testimonial-area__items__item__client-profile__info__name">Oarack Babama</h6>
+                <span class="slothui__testimonial-area__items__item__client-profile__info__identifications">Former
+                  President of US</span>
+              </div>
+            </div>
+          </div>
+          <div class="slothui__testimonial-area__items__item slothui__animate animate-from-left">
+            <div class="slothui__testimonial-area__items__item__review">
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-regular fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
+            <p class="slothui__testimonial-area__items__item__discriptions">
+              Sagittis eu volutpat odio facilisis mauris sit amet massa. Urna et pharetra pharetra massa.
+            </p>
+            <div class="slothui__testimonial-area__items__item__client-profile">
+              <div class="slothui__testimonial-area__items__item__client-profile__img">
+                <img src="assets/images/testimonial/3.png" alt="Slothui">
+              </div>
+              <div class="slothui__testimonial-area__items__item__client-profile__info">
+                <h6 class="slothui__testimonial-area__items__item__client-profile__info__name">Boe Jiden</h6>
+                <span class="slothui__testimonial-area__items__item__client-profile__info__identifications">Former
+                  President Of Canada</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slothui__testimonial-area__items">
+          <div class="slothui__testimonial-area__items__item slothui__animate animate-from-top">
+            <div class="slothui__testimonial-area__items__item__review">
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-regular fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
+            <p class="slothui__testimonial-area__items__item__discriptions">
+              Posuere urna nec tincidunt praesent semper feugiat nibh sed. Velit dignissim sodales ut eu.
+            </p>
+            <div class="slothui__testimonial-area__items__item__client-profile">
+              <div class="slothui__testimonial-area__items__item__client-profile__img">
+                <img src="assets/images/testimonial/4.png" alt="Slothui">
+              </div>
+              <div class="slothui__testimonial-area__items__item__client-profile__info">
+                <h6 class="slothui__testimonial-area__items__item__client-profile__info__name">Azunyan U. Wu</h6>
+                <span class="slothui__testimonial-area__items__item__client-profile__info__identifications">CEO,
+                  nextlife.ai</span>
+              </div>
+            </div>
+          </div>
+          <div class="slothui__testimonial-area__items__item slothui__animate animate-from-left">
+            <div class="slothui__testimonial-area__items__item__review">
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-regular fa-star-half-stroke"></i></span>
+            </div>
+            <p class="slothui__testimonial-area__items__item__discriptions">
+              Accumsan tortor posuere ac ut consequat. Quis varius quam quisque id diam vel. Commodo odio aenean sed
+              adipiscing diam donec adipiscing. Vel pharetra vel turpis nunc eget.
+            </p>
+            <div class="slothui__testimonial-area__items__item__client-profile">
+              <div class="slothui__testimonial-area__items__item__client-profile__img">
+                <img src="assets/images/testimonial/6.png" alt="Slothui">
+              </div>
+              <div class="slothui__testimonial-area__items__item__client-profile__info">
+                <h6 class="slothui__testimonial-area__items__item__client-profile__info__name">Saylor Twift</h6>
+                <span class="slothui__testimonial-area__items__item__client-profile__info__identifications">Famous
+                  Singer</span>
+              </div>
+            </div>
+          </div>
+          <div class="slothui__testimonial-area__items__item slothui__animate animate-from-bottom">
+            <div class="slothui__testimonial-area__items__item__review">
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+            </div>
+            <p class="slothui__testimonial-area__items__item__discriptions">
+               Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Nec nam aliquam sem et tortor consequat
+              id porta nibh. Viverra suspendisse. Lacus sed viverra tellus in hac habitasse platea dictumst. Elit at
+              imperdiet dui accumsan.
+            </p>
+            <div class="slothui__testimonial-area__items__item__client-profile">
+              <div class="slothui__testimonial-area__items__item__client-profile__img">
+                <img src="assets/images/testimonial/6.png" alt="Slothui">
+              </div>
+              <div class="slothui__testimonial-area__items__item__client-profile__info">
+                <h6 class="slothui__testimonial-area__items__item__client-profile__info__name">Vermillion D. Gray</h6>
+                <span class="slothui__testimonial-area__items__item__client-profile__info__identifications">CEO,
+                  hacklife.ai</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slothui__testimonial-area__items">
+          <div class="slothui__testimonial-area__items__item slothui__animate animate-from-left">
+            <div class="slothui__testimonial-area__items__item__review">
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
+            <p class="slothui__testimonial-area__items__item__discriptions">
+              Sit amet est placerat in. Blandit cursus risus at ultrices mi tempus imperdiet. Volutpat commodo sed
+              egestas egestas fringilla phasellus. Tincidunt eget nullam non nisi. 
+            </p>
+            <div class="slothui__testimonial-area__items__item__client-profile">
+              <div class="slothui__testimonial-area__items__item__client-profile__img">
+                <img src="assets/images/testimonial/7.png" alt="Slothui">
+              </div>
+              <div class="slothui__testimonial-area__items__item__client-profile__info">
+                <h6 class="slothui__testimonial-area__items__item__client-profile__info__name">Mechatronics Yi</h6>
+                <span class="slothui__testimonial-area__items__item__client-profile__info__identifications">CTO,
+                  fin4win.ai</span>
+              </div>
+            </div>
+          </div>
+          <div class="slothui__testimonial-area__items__item slothui__animate animate-from-top">
+            <div class="slothui__testimonial-area__items__item__review">
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-regular fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
+            <p class="slothui__testimonial-area__items__item__discriptions">
+              Venenatis cras sed felis eget velit aliquet. Velit scelerisque in dictum non consectetur. Felis eget velit
+              aliquet sagittis. Ultricies integer quis auctor elit sed vulputate mi. 
+            </p>
+            <div class="slothui__testimonial-area__items__item__client-profile">
+              <div class="slothui__testimonial-area__items__item__client-profile__img">
+                <img src="assets/images/testimonial/8.png" alt="Slothui">
+              </div>
+              <div class="slothui__testimonial-area__items__item__client-profile__info">
+                <h6 class="slothui__testimonial-area__items__item__client-profile__info__name">Asuna Yuuki</h6>
+                <span class="slothui__testimonial-area__items__item__client-profile__info__identifications">Virtual
+                  Swordsman</span>
+              </div>
+            </div>
+          </div>
+          <div class="slothui__testimonial-area__items__item slothui__animate animate-from-bottom">
+            <div class="slothui__testimonial-area__items__item__review">
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-solid fa-star-sharp"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
+            <p class="slothui__testimonial-area__items__item__discriptions">
+              Viverra accumsan in nisl nisi scelerisque eu. Vitae congue eu consequat ac felis donec.
+            </p>
+            <div class="slothui__testimonial-area__items__item__client-profile">
+              <div class="slothui__testimonial-area__items__item__client-profile__img">
+                <img src="assets/images/testimonial/9.png" alt="Slothui">
+              </div>
+              <div class="slothui__testimonial-area__items__item__client-profile__info">
+                <h6 class="slothui__testimonial-area__items__item__client-profile__info__name">Zuckman Wu</h6>
+                <span class="slothui__testimonial-area__items__item__client-profile__info__identifications">CEO,
+                  tech4life.ai</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0)"
+        class="slothui__theme-button slothui__show-hide-btn slothui__animate animate-from-left">Load More <i
+          class="fa-light fa-plus"></i> </a>
+    </div>
+  </section>
+  <!-- End Testimonial Area -->
+
+  <!-- Start Contact Area -->
+  <section
+    class="slothui__contact-area slothui__position-relative slothui__section-gap-bottom slothui__section-gap-top">
+    <div class="slothui__container">
+      <div class="slothui__title-wrapper slothui__title-wrapper-gap slothui__align-center">
+        <span class="slothui__title-meta__text slothui__animate animate-from-top">Visit Us Anytime</span>
+        <h2 class="slothui__title slothui__animate animate-from-left">Our Office</h2>
+        <p class="slothui__sub-title slothui__animate animate-from-bottom">You can visit our office anytime but please
+          don’t stalk us or don’t be creepy.</p>
+      </div>
+      <div class="slothui__contact-area__wrapper">
+        <div class="slothui__contact-area__wrapper__item slothui__animate animate-from-bottom">
+          <span class="slothui__contact-area__wrapper__item__icon">
+            <i class="fa-light fa-location-dot"></i>
+          </span>
+          <h5 class="slothui__contact-area__wrapper__item__country-name">Japan</h5>
+          <a href="#">221b Banzai Street <br> Tokyo, TO 77812</a>
+        </div>
+        <div class="slothui__contact-area__wrapper__item slothui__animate animate-from-left">
+          <span class="slothui__contact-area__wrapper__item__icon">
+            <i class="fa-light fa-location-dot"></i>
+          </span>
+          <h5 class="slothui__contact-area__wrapper__item__country-name">USA</h5>
+          <a href="#">221b Freedom Street <br> New York, NY 21231</a>
+        </div>
+        <div class="slothui__contact-area__wrapper__item slothui__animate animate-from-top">
+          <span class="slothui__contact-area__wrapper__item__icon">
+            <i class="fa-light fa-location-dot"></i>
+          </span>
+          <h5 class="slothui__contact-area__wrapper__item__country-name">Canada</h5>
+          <a href="#">221b Maple Syrup Street <br> Ottawa, OW 77847</a>
+        </div>
+        <div class="slothui__contact-area__wrapper__item slothui__animate animate-from-bottom">
+          <span class="slothui__contact-area__wrapper__item__icon">
+            <i class="fa-light fa-location-dot"></i>
+          </span>
+          <h5 class="slothui__contact-area__wrapper__item__country-name">South Korea</h5>
+          <a href="#">221b Samyang Street <br> Gangnam, GM 22124</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Area -->
+
+  <!-- Start Faq Area  -->
+  <section class="slothui__faq-area slothui__position-relative slothui__section-gap-bottom slothui__section-gap-top">
+    <div class="slothui__container">
+      <div class="slothui__title-wrapper slothui__align-center slothui__title-wrapper-gap">
+        <span class="slothui__title-meta__text slothui__animate animate-from-top">FAQ</span>
+        <h2 class="slothui__title slothui__animate animate-from-left">Frequently Asked Questions</h2>
+        <p class="slothui__sub-title slothui__animate animate-from-bottom">Fermentum iaculis eu non diam phasellus
+          vestibulum. Volutpat commodo sed egestas egestas <br> fringilla phasellus. Donec ac odio tempor orci dapibus
+          ultrices.</p>
+      </div>
+      <div class="slothui__faq-area__wrapper">
+        <div class="slothui__faq-item slothui__animate animate-from-bottom">
+          <div class="slothui__faq-question">
+            <div class="slothui__question-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M13.5 16.875C13.5 17.1717 13.412 17.4617 13.2472 17.7084C13.0824 17.955 12.8481 18.1473 12.574 18.2608C12.2999 18.3744 11.9983 18.4041 11.7074 18.3462C11.4164 18.2883 11.1491 18.1454 10.9393 17.9357C10.7296 17.7259 10.5867 17.4586 10.5288 17.1676C10.4709 16.8767 10.5007 16.5751 10.6142 16.301C10.7277 16.0269 10.92 15.7926 11.1666 15.6278C11.4133 15.463 11.7033 15.375 12 15.375C12.3978 15.375 12.7794 15.533 13.0607 15.8143C13.342 16.0956 13.5 16.4772 13.5 16.875ZM22.125 12C22.125 14.0025 21.5312 15.9601 20.4186 17.6251C19.3061 19.2902 17.7248 20.5879 15.8747 21.3543C14.0246 22.1206 11.9888 22.3211 10.0247 21.9305C8.06066 21.5398 6.25656 20.5755 4.84055 19.1595C3.42454 17.7435 2.46023 15.9393 2.06955 13.9753C1.67888 12.0112 1.87939 9.97543 2.64572 8.12533C3.41206 6.27523 4.70981 4.69392 6.37486 3.58137C8.0399 2.46882 9.99747 1.875 12 1.875C14.6844 1.87798 17.258 2.94567 19.1562 4.84383C21.0543 6.74199 22.122 9.3156 22.125 12ZM19.875 12C19.875 10.4425 19.4131 8.91992 18.5478 7.62488C17.6825 6.32985 16.4526 5.32049 15.0136 4.72445C13.5747 4.12841 11.9913 3.97246 10.4637 4.27632C8.93607 4.58017 7.53288 5.3302 6.43154 6.43153C5.3302 7.53287 4.58018 8.93606 4.27632 10.4637C3.97246 11.9913 4.12841 13.5747 4.72445 15.0136C5.32049 16.4526 6.32985 17.6825 7.62489 18.5478C8.91993 19.4131 10.4425 19.875 12 19.875C14.0879 19.8728 16.0896 19.0424 17.566 17.566C19.0424 16.0896 19.8728 14.0879 19.875 12ZM12 6C9.72563 6 7.875 7.68188 7.875 9.75V10.125C7.875 10.4234 7.99353 10.7095 8.20451 10.9205C8.41549 11.1315 8.70164 11.25 9 11.25C9.29837 11.25 9.58452 11.1315 9.7955 10.9205C10.0065 10.7095 10.125 10.4234 10.125 10.125V9.75C10.125 8.92313 10.9688 8.25 12 8.25C13.0313 8.25 13.875 8.92313 13.875 9.75C13.875 10.5769 13.0313 11.25 12 11.25C11.7016 11.25 11.4155 11.3685 11.2045 11.5795C10.9935 11.7905 10.875 12.0766 10.875 12.375V13.125C10.8743 13.4029 10.9766 13.6713 11.162 13.8783C11.3475 14.0854 11.603 14.2164 11.8793 14.2462C12.1557 14.276 12.4333 14.2025 12.6586 14.0398C12.8839 13.8771 13.0411 13.6367 13.0997 13.365C14.8416 12.9262 16.125 11.4722 16.125 9.75C16.125 7.68188 14.2744 6 12 6Z"
+                  fill="#1E293B" />
+              </svg>
+            </div>
+            <h3>Enim sed faucibus turpis in eu mi bibendum neque egestas?</h3>
+            <div class="slothui__arrow-icon">
+              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+          </div>
+          <div class="slothui__faq-answer">
+            <p>Mattis ullamcorper velit sed ullamcorper morbi tincidunt. In metus vulputate eu scelerisque felis
+              imperdiet proin fermentum leo. Diam quis enim lobortis scelerisque fermentum dui faucibus. Urna nunc id
+              cursus metus aliquam eleifend mi. Gravida quis blandit turpis cursus in hac.</p>
+          </div>
+        </div>
+        <div class="slothui__faq-item slothui__animate animate-from-left">
+          <div class="slothui__faq-question">
+            <div class="slothui__question-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M13.5 16.875C13.5 17.1717 13.412 17.4617 13.2472 17.7084C13.0824 17.955 12.8481 18.1473 12.574 18.2608C12.2999 18.3744 11.9983 18.4041 11.7074 18.3462C11.4164 18.2883 11.1491 18.1454 10.9393 17.9357C10.7296 17.7259 10.5867 17.4586 10.5288 17.1676C10.4709 16.8767 10.5007 16.5751 10.6142 16.301C10.7277 16.0269 10.92 15.7926 11.1666 15.6278C11.4133 15.463 11.7033 15.375 12 15.375C12.3978 15.375 12.7794 15.533 13.0607 15.8143C13.342 16.0956 13.5 16.4772 13.5 16.875ZM22.125 12C22.125 14.0025 21.5312 15.9601 20.4186 17.6251C19.3061 19.2902 17.7248 20.5879 15.8747 21.3543C14.0246 22.1206 11.9888 22.3211 10.0247 21.9305C8.06066 21.5398 6.25656 20.5755 4.84055 19.1595C3.42454 17.7435 2.46023 15.9393 2.06955 13.9753C1.67888 12.0112 1.87939 9.97543 2.64572 8.12533C3.41206 6.27523 4.70981 4.69392 6.37486 3.58137C8.0399 2.46882 9.99747 1.875 12 1.875C14.6844 1.87798 17.258 2.94567 19.1562 4.84383C21.0543 6.74199 22.122 9.3156 22.125 12ZM19.875 12C19.875 10.4425 19.4131 8.91992 18.5478 7.62488C17.6825 6.32985 16.4526 5.32049 15.0136 4.72445C13.5747 4.12841 11.9913 3.97246 10.4637 4.27632C8.93607 4.58017 7.53288 5.3302 6.43154 6.43153C5.3302 7.53287 4.58018 8.93606 4.27632 10.4637C3.97246 11.9913 4.12841 13.5747 4.72445 15.0136C5.32049 16.4526 6.32985 17.6825 7.62489 18.5478C8.91993 19.4131 10.4425 19.875 12 19.875C14.0879 19.8728 16.0896 19.0424 17.566 17.566C19.0424 16.0896 19.8728 14.0879 19.875 12ZM12 6C9.72563 6 7.875 7.68188 7.875 9.75V10.125C7.875 10.4234 7.99353 10.7095 8.20451 10.9205C8.41549 11.1315 8.70164 11.25 9 11.25C9.29837 11.25 9.58452 11.1315 9.7955 10.9205C10.0065 10.7095 10.125 10.4234 10.125 10.125V9.75C10.125 8.92313 10.9688 8.25 12 8.25C13.0313 8.25 13.875 8.92313 13.875 9.75C13.875 10.5769 13.0313 11.25 12 11.25C11.7016 11.25 11.4155 11.3685 11.2045 11.5795C10.9935 11.7905 10.875 12.0766 10.875 12.375V13.125C10.8743 13.4029 10.9766 13.6713 11.162 13.8783C11.3475 14.0854 11.603 14.2164 11.8793 14.2462C12.1557 14.276 12.4333 14.2025 12.6586 14.0398C12.8839 13.8771 13.0411 13.6367 13.0997 13.365C14.8416 12.9262 16.125 11.4722 16.125 9.75C16.125 7.68188 14.2744 6 12 6Z"
+                  fill="#1E293B" />
+              </svg>
+            </div>
+            <h3>Amet consectetur adipiscing elit pellentesque habitant morbi tristique?</h3>
+            <div class="slothui__arrow-icon">
+              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+          </div>
+          <div class="slothui__faq-answer">
+            <p>Mattis ullamcorper velit sed ullamcorper morbi tincidunt. In metus vulputate eu scelerisque felis
+              imperdiet proin fermentum leo. Diam quis enim lobortis scelerisque fermentum dui faucibus. Urna nunc id
+              cursus metus aliquam eleifend mi. Gravida quis blandit turpis cursus in hac.</p>
+          </div>
+        </div>
+        <div class="slothui__faq-item slothui__active slothui__animate animate-from-top">
+          <div class="slothui__faq-question">
+            <div class="slothui__question-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M13.5 16.875C13.5 17.1717 13.412 17.4617 13.2472 17.7084C13.0824 17.955 12.8481 18.1473 12.574 18.2608C12.2999 18.3744 11.9983 18.4041 11.7074 18.3462C11.4164 18.2883 11.1491 18.1454 10.9393 17.9357C10.7296 17.7259 10.5867 17.4586 10.5288 17.1676C10.4709 16.8767 10.5007 16.5751 10.6142 16.301C10.7277 16.0269 10.92 15.7926 11.1666 15.6278C11.4133 15.463 11.7033 15.375 12 15.375C12.3978 15.375 12.7794 15.533 13.0607 15.8143C13.342 16.0956 13.5 16.4772 13.5 16.875ZM22.125 12C22.125 14.0025 21.5312 15.9601 20.4186 17.6251C19.3061 19.2902 17.7248 20.5879 15.8747 21.3543C14.0246 22.1206 11.9888 22.3211 10.0247 21.9305C8.06066 21.5398 6.25656 20.5755 4.84055 19.1595C3.42454 17.7435 2.46023 15.9393 2.06955 13.9753C1.67888 12.0112 1.87939 9.97543 2.64572 8.12533C3.41206 6.27523 4.70981 4.69392 6.37486 3.58137C8.0399 2.46882 9.99747 1.875 12 1.875C14.6844 1.87798 17.258 2.94567 19.1562 4.84383C21.0543 6.74199 22.122 9.3156 22.125 12ZM19.875 12C19.875 10.4425 19.4131 8.91992 18.5478 7.62488C17.6825 6.32985 16.4526 5.32049 15.0136 4.72445C13.5747 4.12841 11.9913 3.97246 10.4637 4.27632C8.93607 4.58017 7.53288 5.3302 6.43154 6.43153C5.3302 7.53287 4.58018 8.93606 4.27632 10.4637C3.97246 11.9913 4.12841 13.5747 4.72445 15.0136C5.32049 16.4526 6.32985 17.6825 7.62489 18.5478C8.91993 19.4131 10.4425 19.875 12 19.875C14.0879 19.8728 16.0896 19.0424 17.566 17.566C19.0424 16.0896 19.8728 14.0879 19.875 12ZM12 6C9.72563 6 7.875 7.68188 7.875 9.75V10.125C7.875 10.4234 7.99353 10.7095 8.20451 10.9205C8.41549 11.1315 8.70164 11.25 9 11.25C9.29837 11.25 9.58452 11.1315 9.7955 10.9205C10.0065 10.7095 10.125 10.4234 10.125 10.125V9.75C10.125 8.92313 10.9688 8.25 12 8.25C13.0313 8.25 13.875 8.92313 13.875 9.75C13.875 10.5769 13.0313 11.25 12 11.25C11.7016 11.25 11.4155 11.3685 11.2045 11.5795C10.9935 11.7905 10.875 12.0766 10.875 12.375V13.125C10.8743 13.4029 10.9766 13.6713 11.162 13.8783C11.3475 14.0854 11.603 14.2164 11.8793 14.2462C12.1557 14.276 12.4333 14.2025 12.6586 14.0398C12.8839 13.8771 13.0411 13.6367 13.0997 13.365C14.8416 12.9262 16.125 11.4722 16.125 9.75C16.125 7.68188 14.2744 6 12 6Z"
+                  fill="#1E293B" />
+              </svg>
+            </div>
+            <h3>Elit pellentesque habitant morbi tristique senectus?</h3>
+            <div class="slothui__arrow-icon">
+              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+          </div>
+          <div class="slothui__faq-answer">
+            <p>Mattis ullamcorper velit sed ullamcorper morbi tincidunt. In metus vulputate eu scelerisque felis
+              imperdiet proin fermentum leo. Diam quis enim lobortis scelerisque fermentum dui faucibus. Urna nunc id
+              cursus metus aliquam eleifend mi. Gravida quis blandit turpis cursus in hac.</p>
+          </div>
+        </div>
+        <div class="slothui__faq-item slothui__animate animate-from-bottom">
+          <div class="slothui__faq-question">
+            <div class="slothui__question-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M13.5 16.875C13.5 17.1717 13.412 17.4617 13.2472 17.7084C13.0824 17.955 12.8481 18.1473 12.574 18.2608C12.2999 18.3744 11.9983 18.4041 11.7074 18.3462C11.4164 18.2883 11.1491 18.1454 10.9393 17.9357C10.7296 17.7259 10.5867 17.4586 10.5288 17.1676C10.4709 16.8767 10.5007 16.5751 10.6142 16.301C10.7277 16.0269 10.92 15.7926 11.1666 15.6278C11.4133 15.463 11.7033 15.375 12 15.375C12.3978 15.375 12.7794 15.533 13.0607 15.8143C13.342 16.0956 13.5 16.4772 13.5 16.875ZM22.125 12C22.125 14.0025 21.5312 15.9601 20.4186 17.6251C19.3061 19.2902 17.7248 20.5879 15.8747 21.3543C14.0246 22.1206 11.9888 22.3211 10.0247 21.9305C8.06066 21.5398 6.25656 20.5755 4.84055 19.1595C3.42454 17.7435 2.46023 15.9393 2.06955 13.9753C1.67888 12.0112 1.87939 9.97543 2.64572 8.12533C3.41206 6.27523 4.70981 4.69392 6.37486 3.58137C8.0399 2.46882 9.99747 1.875 12 1.875C14.6844 1.87798 17.258 2.94567 19.1562 4.84383C21.0543 6.74199 22.122 9.3156 22.125 12ZM19.875 12C19.875 10.4425 19.4131 8.91992 18.5478 7.62488C17.6825 6.32985 16.4526 5.32049 15.0136 4.72445C13.5747 4.12841 11.9913 3.97246 10.4637 4.27632C8.93607 4.58017 7.53288 5.3302 6.43154 6.43153C5.3302 7.53287 4.58018 8.93606 4.27632 10.4637C3.97246 11.9913 4.12841 13.5747 4.72445 15.0136C5.32049 16.4526 6.32985 17.6825 7.62489 18.5478C8.91993 19.4131 10.4425 19.875 12 19.875C14.0879 19.8728 16.0896 19.0424 17.566 17.566C19.0424 16.0896 19.8728 14.0879 19.875 12ZM12 6C9.72563 6 7.875 7.68188 7.875 9.75V10.125C7.875 10.4234 7.99353 10.7095 8.20451 10.9205C8.41549 11.1315 8.70164 11.25 9 11.25C9.29837 11.25 9.58452 11.1315 9.7955 10.9205C10.0065 10.7095 10.125 10.4234 10.125 10.125V9.75C10.125 8.92313 10.9688 8.25 12 8.25C13.0313 8.25 13.875 8.92313 13.875 9.75C13.875 10.5769 13.0313 11.25 12 11.25C11.7016 11.25 11.4155 11.3685 11.2045 11.5795C10.9935 11.7905 10.875 12.0766 10.875 12.375V13.125C10.8743 13.4029 10.9766 13.6713 11.162 13.8783C11.3475 14.0854 11.603 14.2164 11.8793 14.2462C12.1557 14.276 12.4333 14.2025 12.6586 14.0398C12.8839 13.8771 13.0411 13.6367 13.0997 13.365C14.8416 12.9262 16.125 11.4722 16.125 9.75C16.125 7.68188 14.2744 6 12 6Z"
+                  fill="#1E293B" />
+              </svg>
+            </div>
+            <h3>Gravida quis blandit turpis cursus in hac. Mi ipsum faucibus vitae aliquet nec?</h3>
+            <div class="slothui__arrow-icon">
+              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+          </div>
+          <div class="slothui__faq-answer">
+            <p>Mattis ullamcorper velit sed ullamcorper morbi tincidunt. In metus vulputate eu scelerisque felis
+              imperdiet proin fermentum leo. Diam quis enim lobortis scelerisque fermentum dui faucibus. Urna nunc id
+              cursus metus aliquam eleifend mi. Gravida quis blandit turpis cursus in hac.</p>
+          </div>
+        </div>
+        <div class="slothui__faq-item slothui__animate animate-from-left">
+          <div class="slothui__faq-question">
+            <div class="slothui__question-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M13.5 16.875C13.5 17.1717 13.412 17.4617 13.2472 17.7084C13.0824 17.955 12.8481 18.1473 12.574 18.2608C12.2999 18.3744 11.9983 18.4041 11.7074 18.3462C11.4164 18.2883 11.1491 18.1454 10.9393 17.9357C10.7296 17.7259 10.5867 17.4586 10.5288 17.1676C10.4709 16.8767 10.5007 16.5751 10.6142 16.301C10.7277 16.0269 10.92 15.7926 11.1666 15.6278C11.4133 15.463 11.7033 15.375 12 15.375C12.3978 15.375 12.7794 15.533 13.0607 15.8143C13.342 16.0956 13.5 16.4772 13.5 16.875ZM22.125 12C22.125 14.0025 21.5312 15.9601 20.4186 17.6251C19.3061 19.2902 17.7248 20.5879 15.8747 21.3543C14.0246 22.1206 11.9888 22.3211 10.0247 21.9305C8.06066 21.5398 6.25656 20.5755 4.84055 19.1595C3.42454 17.7435 2.46023 15.9393 2.06955 13.9753C1.67888 12.0112 1.87939 9.97543 2.64572 8.12533C3.41206 6.27523 4.70981 4.69392 6.37486 3.58137C8.0399 2.46882 9.99747 1.875 12 1.875C14.6844 1.87798 17.258 2.94567 19.1562 4.84383C21.0543 6.74199 22.122 9.3156 22.125 12ZM19.875 12C19.875 10.4425 19.4131 8.91992 18.5478 7.62488C17.6825 6.32985 16.4526 5.32049 15.0136 4.72445C13.5747 4.12841 11.9913 3.97246 10.4637 4.27632C8.93607 4.58017 7.53288 5.3302 6.43154 6.43153C5.3302 7.53287 4.58018 8.93606 4.27632 10.4637C3.97246 11.9913 4.12841 13.5747 4.72445 15.0136C5.32049 16.4526 6.32985 17.6825 7.62489 18.5478C8.91993 19.4131 10.4425 19.875 12 19.875C14.0879 19.8728 16.0896 19.0424 17.566 17.566C19.0424 16.0896 19.8728 14.0879 19.875 12ZM12 6C9.72563 6 7.875 7.68188 7.875 9.75V10.125C7.875 10.4234 7.99353 10.7095 8.20451 10.9205C8.41549 11.1315 8.70164 11.25 9 11.25C9.29837 11.25 9.58452 11.1315 9.7955 10.9205C10.0065 10.7095 10.125 10.4234 10.125 10.125V9.75C10.125 8.92313 10.9688 8.25 12 8.25C13.0313 8.25 13.875 8.92313 13.875 9.75C13.875 10.5769 13.0313 11.25 12 11.25C11.7016 11.25 11.4155 11.3685 11.2045 11.5795C10.9935 11.7905 10.875 12.0766 10.875 12.375V13.125C10.8743 13.4029 10.9766 13.6713 11.162 13.8783C11.3475 14.0854 11.603 14.2164 11.8793 14.2462C12.1557 14.276 12.4333 14.2025 12.6586 14.0398C12.8839 13.8771 13.0411 13.6367 13.0997 13.365C14.8416 12.9262 16.125 11.4722 16.125 9.75C16.125 7.68188 14.2744 6 12 6Z"
+                  fill="#1E293B" />
+              </svg>
+            </div>
+            <h3>Est pellentesque elit ullamcorper dignissim cras. In pellentesque massa placerat?</h3>
+            <div class="slothui__arrow-icon">
+              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+          </div>
+          <div class="slothui__faq-answer">
+            <p>Mattis ullamcorper velit sed ullamcorper morbi tincidunt. In metus vulputate eu scelerisque felis
+              imperdiet proin fermentum leo. Diam quis enim lobortis scelerisque fermentum dui faucibus. Urna nunc id
+              cursus metus aliquam eleifend mi. Gravida quis blandit turpis cursus in hac.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Faq Area  -->
+
+  <!-- Start Cta Area -->
+  <section class="slothui__cta-area slothui__section-gap-top slothui__position-relative">
+    <div class="slothui__container">
+      <div class="slothui__cta-area__wrapper">
+        <div class="slothui__cta-area__text-content">
+          <div class="slothui__title-wrapper slothui__align-start">
+            <h2 class="slothui__title slothui__animate animate-from-left">Let’s Download The App.</h2>
+          </div>
+          <p class="slothui__cta-area__text-content__discriptions slothui__animate animate-from-left">Velit scelerisque
+            in dictum non consectetur. Felis eget velit aliquet sagittis. Ultricies integer quis auctor elit sed
+            vulputate mi. Massa id neque aliquam vestibulum morbi blandit cursus.</p>
+          <div class="slothui__cta-area__text-content__btn-group">
+            <a href="#" class="slothui__theme-button slothui__animate animate-from-top">Learn More</a>
+            <a href="#" class="slothui__theme-button slothui__animate animate-from-left">Get Started</a>
+          </div>
+        </div>
+        <div class="slothui__cta-area__img-content">
+          <div class="slothui__cta-area__img-content__desktop-version">
+            <img src="assets/images/cta/desktop-1.png" alt="Slothui"
+              class="slothui__desktop-img-1 slothui__animate animate-reveal-top">
+            <img src="assets/images/cta/desktop-2.png" alt="Slothui"
+              class="slothui__desktop-img-2 slothui__animate animate-reveal">
+          </div>
+          <div class="slothui__cta-area__img-content__mobile-version">
+            <img src="assets/images/cta/mobile-1.png" alt="Slothui"
+              class="slothui__mobile-img-1 slothui__animate animate-reveal-top">
+            <img src="assets/images/cta/mobile-2.png" alt="Slothui"
+              class="slothui__mobile-img-2 slothui__animate animate-reveal">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Cta Area -->
+
+  <!-- Start Footer Area -->
+  <footer class="slothui__footer-area slothui__position-relative slothui__section-gap-top">
+    <div class="slothui__container">
+      <div class="slothui__footer-menu-wrapper">
+        <div class="slothui__footer-menu-wrapper__item slothui__animate animate-from-bottom">
+          <h4 class="slothui__footer-menu-wrapper__item__title">Site Map</h4>
+          <ul class="slothui__footer-menu-wrapper__item__list">
+            <li><a href="#">Homepage</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="slothui__footer-menu-wrapper__item slothui__animate animate-from-left">
+          <h4 class="slothui__footer-menu-wrapper__item__title">Services</h4>
+          <ul class="slothui__footer-menu-wrapper__item__list">
+            <li><a href="#">Service Lineup 1</a></li>
+            <li><a href="#">Service Lineup 2</a></li>
+            <li><a href="#">Service Lineup 3</a></li>
+            <li><a href="#">Service Lineup 4</a></li>
+            <li><a href="#">Service Lineup 5</a></li>
+            <li><a href="#">Service Lineup 6</a></li>
+          </ul>
+        </div>
+        <div class="slothui__footer-menu-wrapper__item slothui__animate animate-from-top">
+          <h4 class="slothui__footer-menu-wrapper__item__title">Product</h4>
+          <ul class="slothui__footer-menu-wrapper__item__list">
+            <li><a href="#">Product Lineup 1</a></li>
+            <li><a href="#">Product Lineup 2</a></li>
+            <li><a href="#">Product Lineup 3</a></li>
+            <li><a href="#">Product Lineup 4</a></li>
+            <li><a href="#">Product Lineup 5</a></li>
+            <li><a href="#">Product Lineup 6</a></li>
+          </ul>
+        </div>
+        <div class="slothui__footer-menu-wrapper__item slothui__animate animate-from-bottom">
+          <h4 class="slothui__footer-menu-wrapper__item__title">Help & Support</h4>
+          <ul class="slothui__footer-menu-wrapper__item__list">
+            <li><a href="#">Live Chat</a></li>
+            <li><a href="#">Email Support</a></li>
+            <li><a href="#">Product Refund</a></li>
+            <li><a href="#">Submit Feedback</a></li>
+            <li><a href="#">Help Ticket</a></li>
+            <li><a href="#">Call Center</a></li>
+          </ul>
+        </div>
+        <div class="slothui__footer-menu-wrapper__item slothui__animate animate-from-left">
+          <h4 class="slothui__footer-menu-wrapper__item__title">Legal</h4>
+          <ul class="slothui__footer-menu-wrapper__item__list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">HIPAA Notice</a></li>
+            <li><a href="#">Data Policy</a></li>
+            <li><a href="#">AI Privacy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Lawyer’s Corner</a></li>
+          </ul>
+        </div>
+        <div class="slothui__footer-menu-wrapper__item slothui__animate animate-from-top">
+          <h4 class="slothui__footer-menu-wrapper__item__title">Pricing</h4>
+          <ul class="slothui__footer-menu-wrapper__item__list">
+            <li><a href="#">Pricing Tier 1</a></li>
+            <li><a href="#">Pricing Tier 2</a></li>
+            <li><a href="#">Pricing Tier 3</a></li>
+            <li><a href="#">Pricing Tier 4</a></li>
+            <li><a href="#">Pricing Tier 5</a></li>
+            <li><a href="#">Pricing Tier 6</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="slothui__copyright">
+        <div class="slothui__copyright__logo">
+          <a href="index.html">
+            <img src="assets/images/logo/logo.svg" alt="Slothui">
+          </a>
+        </div>
+        <p class="slothui__copyright__text slothui__animate animate-from-top">Copyright 2028 slothUI, All Rights
+          Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Area -->
+
+  <!-- Start Top To Scroll  -->
+  <div class="scroll-up active-scroll">
+    <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+        style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 146.594;">
+      </path>
+    </svg>
+  </div>
+  <!-- End Top To Scroll -->
+
+  <!-- Start Mobile Menu -->
+  <div class="slothui__mobile-menu">
+    <div class="slothui__mobile-menu__header">
+      <div class="slothui__logo">
+        <a href="index.html">
+          <img src="assets/images/logo/logo.svg" alt="Puppiez">
+        </a>
+      </div>
+      <button class="slothui__mobile-menu__close-btn slothui__close-btn"><i
+          class="fa-sharp fa-light fa-xmark"></i></button>
+    </div>
+    <nav class="slothui__mobile-main-menu">
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Achievements</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="slothui__mobile-menu__copyright">
+      <p class="slothui__mobile-menu__copyright__text">© 2028 slothUI, All Rights Reserved.</p>
+    </div>
+  </div>
+  <!-- End Mobile Menu -->
+
+  <!-- Start Overlay -->
+  <div class="slothui__overlay"></div>
+  <!-- End Overlay -->
+
+  <!--Start Js Files-->
+  <script defer src="assets/js/script.js"></script>
+  <!-- End Js File -->
+</body>
+
+</html>

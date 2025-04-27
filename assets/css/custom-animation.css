@@ -1,0 +1,100 @@
+/* Start Header Sticky  */
+@keyframes slothui__headerStickyAnimations {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+  }
+/* End Header Sticky */
+
+/* Start Counter Up  */
+@keyframes counterAnimation {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+/* End Counter Up */
+
+/* Start Preloader */
+@keyframes spinLoader {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+/* End Preloader */
+
+/* Base hidden state for all animations */
+.slothui__animate {
+    opacity: 0;
+    transform: translateY(20px);
+    overflow: hidden;
+  }
+  
+  /* Active state for all animations */
+  .slothui__animate.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease-out;
+  }
+  
+  /* Animation from Top */
+  .animate-from-top {
+    transform: translateY(-50px);
+  }
+  
+  .animate-from-top.active {
+    transform: translateY(0);
+  }
+  
+  /* Animation from Left */
+  .animate-from-left {
+    transform: translateX(-50px);
+  }
+  
+  .animate-from-left.active {
+    transform: translateX(0);
+  }
+  
+  /* Animation from Bottom */
+  .animate-from-bottom {
+    transform: translateY(50px);
+  }
+  
+  .animate-from-bottom.active {
+    transform: translateY(0);
+  }
+  
+  /* Image Reveal Animation */
+  .animate-reveal {
+    position: relative;
+    clip-path: inset(0 100% 0 0);
+  }
+  
+  .animate-reveal.active {
+    clip-path: inset(0 0 0 0);
+    transition: clip-path 1s ease-out;
+  }
+  .animate-reveal-top {
+    position: relative;
+    clip-path: inset(0 0 100% 0);
+  }
+  
+  .animate-reveal-top.active {
+    clip-path: inset(0 0 0 0);
+    transition: clip-path 1s ease-out;
+  }
+
+
+  
