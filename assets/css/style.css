@@ -1,13 +1,14 @@
 /*
 Theme Name: Slothui
-Author: Vecuro_Themes
-Discription: AI Agency & Technology Html5 Template
+Author: Blinto LLC
+Discription: Slothui Html5 Sass Agency Template
 Version: 1.0.0
 Developed By : MD Saiful Islam Tamim
 */
 /************************************** base css **************************************/
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 :root {
+  /* Start Color Palet */
   --slothui__primary-color:#fff;
   --slothui__secondary-color:#000;
   --slothui__theme-primary-color:#475569;
@@ -19,7 +20,13 @@ Developed By : MD Saiful Islam Tamim
   --slothui__theme-section-bg-color:#F8FAFC;
   --slothui__theme-yellow-color:#F59E0B;
   --slothui__theme-eerie-black:#141422;
+  /* End Color Palet */
+
+  /* Start Font Family */
   --slothui__theme-font:"Plus Jakarta Sans", sans-serif;
+  /* End Font Family */
+
+  /* Start Font Weight */
   --slothui__fw-normal: normal;
   --slothui__fw-thin: 100;
   --slothui__fw-elight: 200;
@@ -30,20 +37,28 @@ Developed By : MD Saiful Islam Tamim
   --slothui__fw-bold: 700;
   --slothui__fw-ebold: 800;
   --slothui__fw-black: 900;
+  /* End Font Weight */
+
+  /* Start Font Size */
   --slothui__fs-xxxl:60px;
   --slothui__fs-xxl:36px;
   --slothui__fs-xl:20px;
   --slothui__fs-lg:18px;
   --slothui__fs-md:16px;
   --slothui__fs-sm:14px;
+  /* End Font Size */
+
+  /* Start Line Height */
   --slothui__lh-xxxl:68px;
   --slothui__lh-xxl:44px;
   --slothui__lh-xl:32px;
   --slothui__lh-lg:28.8px;
   --slothui__lh-md:25.6px;
   --slothui__lh-sm:20px;
+  /* End Line Height */
 }
 
+/* Start Theme Common Css */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -150,7 +165,7 @@ input,
 textarea {
   font-family: var(--slothui__primary-font);
 }
-
+/* Start Theme Common Css */
 
 /* Start Header Area */
 .slothui__header-area {
@@ -161,21 +176,29 @@ textarea {
 .slothui__header-area.slothui__header-sticky {
   position: fixed !important;
   top: 0;
-  animation: slothui__headerStickyAnimations 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slothui__headerStickyAnimations 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slothui__headerStickyAnimations 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   display: block;
   width: 100%;
   z-index: 100;
   max-width: 100%;
-  box-shadow: 10px 10px 42px -1px rgba(65, 63, 63, 0.15);
+  -webkit-box-shadow: 10px 10px 42px -1px rgba(65, 63, 63, 0.15);
+          box-shadow: 10px 10px 42px -1px rgba(65, 63, 63, 0.15);
   background-color: var(--slothui__primary-color);
 }
 /* End Header Sticky */
 
 
 .slothui__header-area .slothui__header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (max-width: 768px) {
   .slothui__header-area .slothui__header-wrapper__header-menu {
@@ -183,9 +206,15 @@ textarea {
   }
 }
 .slothui__header-area .slothui__header-wrapper__header-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 35px;
 }
 @media (max-width: 991px) {
@@ -197,6 +226,8 @@ textarea {
   letter-spacing: -0.112px;
   font-weight: var(--slothui__fw-bold);
   text-transform: capitalize;
+  -webkit-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
   transition: linear 0.3s;
   color: var(--slothui__theme-primary-color);
 }
@@ -204,10 +235,16 @@ textarea {
   color: var(--slothui__theme-navyblue-color);
 }
 .slothui__header-area .slothui__header-wrapper__header-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .slothui__header-area .slothui__header-wrapper__header-btn .slothui__mobile-menu-bar {
   display: none;
@@ -217,6 +254,8 @@ textarea {
     display: block;
   }
   .slothui__header-area .slothui__header-wrapper__header-btn .slothui__mobile-menu-bar svg path {
+    -webkit-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
     transition: linear 0.3s;
   }
   .slothui__header-area .slothui__header-wrapper__header-btn .slothui__mobile-menu-bar:hover svg path {
@@ -252,7 +291,10 @@ textarea {
   background: white;
   padding: 20px;
   z-index: 1000;
-  box-shadow: 10px 10px 42px -1px rgb(65, 63, 63);
+  -webkit-box-shadow: 10px 10px 42px -1px rgb(65, 63, 63);
+          box-shadow: 10px 10px 42px -1px rgb(65, 63, 63);
+  -webkit-transition: right 0.3s ease-in-out;
+  -o-transition: right 0.3s ease-in-out;
   transition: right 0.3s ease-in-out;
   overflow-y: scroll;
 }
@@ -260,9 +302,15 @@ textarea {
   right: 0;
 }
 .slothui__mobile-menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 30px;
 }
 .slothui__mobile-menu .slothui__logo {
@@ -276,12 +324,20 @@ textarea {
   border: 1px solid var(--slothui__theme-border-color);
   width: 35px;
   height: 35px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
   position: relative;
   top: -4px;
+  -webkit-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
   transition: linear 0.3s;
   font-weight: var(--slothui__fw-bold);
 }
@@ -297,6 +353,8 @@ textarea {
   letter-spacing: -0.112px;
   font-weight: var(--slothui__fw-bold);
   text-transform: capitalize;
+  -webkit-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
   transition: linear 0.3s;
   color: var(--slothui__theme-primary-color);
 }
@@ -310,6 +368,8 @@ textarea {
   letter-spacing: -0.112px;
   font-weight: var(--slothui__fw-bold);
   text-transform: capitalize;
+  -webkit-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
   transition: linear 0.3s;
   color: var(--slothui__theme-primary-color);
   font-size: var(--slothui__fs-sm);
@@ -328,6 +388,7 @@ textarea {
   padding: 20px;
   z-index: 999;
   -webkit-transition: right 0.7s ease-in-out;
+  -o-transition: right 0.7s ease-in-out;
   transition: right 0.7s ease-in-out;
 }
 .slothui__overlay:hover {
@@ -387,10 +448,16 @@ textarea {
   }
 }
 .slothui__hero-wrapper__download-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 48px;
   margin-bottom: 40px;
 }
@@ -423,21 +490,34 @@ textarea {
   background-color: var(--slothui__theme-section-bg-color);
 }
 .slothui__brand-area__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   row-gap: 32px;
-  column-gap: 64px;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-column-gap: 64px;
+     -moz-column-gap: 64px;
+          column-gap: 64px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 768px) {
   .slothui__brand-area__wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 32px 1fr 32px 1fr;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
   }
 }
 .slothui__brand-area__wrapper__item a img {
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
 .slothui__brand-area__wrapper__item a:hover img {
@@ -447,12 +527,21 @@ textarea {
 
 /* Start Features Area */
 .slothui__features-area__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
   row-gap: 48px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 768px) {
   .slothui__features-area__wrapper {
@@ -496,16 +585,28 @@ textarea {
 .slothui__statistics-area .slothui__titel-icon {
   width: 56px;
   height: 56px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #EEF2FF;
   border-radius: 50%;
 }
 .slothui__statistics-area__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 768px) {
   .slothui__statistics-area__wrapper {
@@ -551,12 +652,18 @@ textarea {
   }
 }
 .slothui__statistics-area__item__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 768px) {
   .slothui__statistics-area__item__number {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .slothui__statistics-area__item__number__symble {
@@ -576,6 +683,8 @@ textarea {
   margin-top: 16px;
 }
 .slothui__statistics-area .slothui__counter {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: var(--slothui__theme-navyblue-color);
   letter-spacing: -1.08px;
@@ -584,16 +693,23 @@ textarea {
   font-weight: var(--slothui__fw-ebold);
 }
 .slothui__statistics-area .slothui__counter.active {
-  animation: counterAnimation 2s ease-in-out forwards;
+  -webkit-animation: counterAnimation 2s ease-in-out forwards;
+          animation: counterAnimation 2s ease-in-out forwards;
 }
 /* End Statistics Area */
 
 /* Start Tab Area */
 .slothui__tab-area__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 850px) {
   .slothui__tab-area__wrapper {
@@ -625,12 +741,16 @@ textarea {
 .slothui__tab-area__text-content__item__inner-content {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 @media (max-width: 850px) {
   .slothui__tab-area__text-content__item__inner-content {
     position: unset;
-    transform: unset;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
     top: unset;
   }
 }
@@ -668,7 +788,11 @@ textarea {
 .slothui__tab-area__img-content .slothui__tab-img {
   display: none;
   opacity: 0;
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  -o-transition: opacity 0.5s ease, transform 0.5s ease;
   transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 .slothui__tab-area__img-content .slothui__tab-img.slothui__active {
   display: block;
@@ -679,7 +803,9 @@ textarea {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 4px;
   height: 100%;
   background-color: #E0E7FF;
@@ -695,17 +821,28 @@ textarea {
   background-color: var(--slothui__theme-section-bg-color);
 }
 .slothui__testimonial-area__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: start;
-  column-gap: 32px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
   row-gap: 32px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 991px) {
   .slothui__testimonial-area__wrapper {
-    column-gap: 24px;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
     row-gap: 24px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 .slothui__testimonial-area__items__item {
@@ -735,8 +872,12 @@ textarea {
   font-weight: var(--slothui__fw-regular);
 }
 .slothui__testimonial-area__items__item__client-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 12px;
   margin-top: 22px;
 }
@@ -785,12 +926,21 @@ textarea {
 
 /* Start Conact Area */
 .slothui__contact-area__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   row-gap: 32px;
-  column-gap: 32px;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .slothui__contact-area__wrapper__item {
   border: 1px solid var(--slothui__theme-border-color);
@@ -812,6 +962,8 @@ textarea {
 .slothui__contact-area__wrapper__item a {
   display: block;
   color: #1E293B;
+  -webkit-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
   transition: linear 0.3s;
   margin-top: 12px;
 }
@@ -828,13 +980,21 @@ textarea {
   border-bottom: 1px solid var(--slothui__theme-border-color);
 }
 .slothui__faq-area .slothui__faq-question {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px 15px;
   cursor: pointer;
   position: relative;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .slothui__faq-area .slothui__question-icon {
   position: relative;
@@ -842,7 +1002,9 @@ textarea {
   margin-right: 8px;
 }
 .slothui__faq-area .slothui__faq-question h3 {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   font-size: var(--slothui__fs-md);
   line-height: 22px;
   font-weight: var(--slothui__fw-ebold);
@@ -852,12 +1014,16 @@ textarea {
   position: absolute;
   right: 0;
   color: #94A3B8;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-left: 15px;
 }
 .slothui__faq-area .slothui__faq-answer {
   max-height: 0;
   overflow: hidden;
+  -webkit-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   padding-right: 20px;
   opacity: 0;
@@ -871,11 +1037,19 @@ textarea {
 .slothui__faq-area .slothui__faq-answer p {
   font-size: var(--slothui__fs-sm);
   line-height: 22.4px;
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
   transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 .slothui__faq-area .slothui__faq-item.slothui__active .slothui__faq-answer p {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 .slothui__faq-area .slothui__faq-item.slothui__active .slothui__arrow-icon i.fa-chevron-down {
   display: none;
@@ -896,8 +1070,12 @@ textarea {
   }
 }
 .slothui__cta-area__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 991px) {
   .slothui__cta-area__wrapper {
@@ -919,15 +1097,24 @@ textarea {
   color: var(--slothui__theme-primary-color);
 }
 .slothui__cta-area__text-content__btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   row-gap: 16px;
-  column-gap: 16px;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
   margin-top: 50px;
 }
 @media (max-width: 480px) {
   .slothui__cta-area__text-content__btn-group {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media (max-width: 480px) {
@@ -991,10 +1178,14 @@ textarea {
 }
 @media (max-width: 991px) {
   .slothui__cta-area__img-content__mobile-version {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     gap: 20px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 48px;
   }
 }
@@ -1032,11 +1223,18 @@ textarea {
 
 /* End Footer Area */
 .slothui__footer-area .slothui__footer-menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: start;
-  column-gap: 32px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
   row-gap: 32px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 40px;
   border-bottom: 1px solid var(--slothui__theme-border-color);
 }
@@ -1061,6 +1259,8 @@ textarea {
   line-height: 22px;
   color: var(--slothui__theme-primary-color);
   font-weight: var(--slothui__fw-medium);
+  -webkit-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
   transition: linear 0.3s;
 }
 .slothui__footer-area .slothui__footer-menu-wrapper__item__list li a:hover {
@@ -1070,21 +1270,32 @@ textarea {
 
 /* Start Copyright Area */
 .slothui__footer-area .slothui__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 @media (max-width: 480px) {
   .slothui__footer-area .slothui__copyright {
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     row-gap: 20px;
   }
 }
 @media (max-width: 480px) {
   .slothui__footer-area .slothui__copyright__logo a img {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
     max-width: max-content;
     margin-left: auto;
     margin-right: auto;
